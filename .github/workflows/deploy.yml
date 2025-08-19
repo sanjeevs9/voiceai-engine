@@ -35,7 +35,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             sudo docker pull sanjeev91/voice-bot:latest
-            sudo docker stop sanjeev91/voice-bot || true
-            sudo docker rm sanjeev91/voice-bot || true
-            sudo docker run -d --restart always --name sanjeev91/voice-bot --env-file .env -p 8080:8080 sanjeev91/voice-bot:latest
+            sudo docker stop voice-bot || true
+            sudo docker rm voice-bot || true
+            sudo docker run -d --restart always --name voice-bot --env-file .env -p 8080:8080 sanjeev91/voice-bot:latest
             sudo docker image prune -f
