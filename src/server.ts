@@ -28,7 +28,7 @@ app.use(limiter);
 
 // CORS configuration
 app.use(cors({
-  origin: ["http://localhost:5173", "http://localhost:3000", "http://localhost:4173"], // Add your frontend URLs
+  origin: ["http://localhost:5173", "http://localhost:3000", "https://voiceai.sanjeevdev.in"], // Add your frontend URLs
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
   credentials: true,
