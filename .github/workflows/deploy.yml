@@ -25,7 +25,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true 
-          tags: voice-bot:latest
+          tags: sanjeev91/voice-bot:latest
 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@master
@@ -34,8 +34,8 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo docker pull voice-bot:latest
-            sudo docker stop voice-bot || true
-            sudo docker rm voice-bot || true
-            sudo docker run -d --restart always --name voice-bot --env-file .env -p 8080:8080 voice-bot:latest
+            sudo docker pull sanjeev91/voice-bot:latest
+            sudo docker stop sanjeev91/voice-bot || true
+            sudo docker rm sanjeev91/voice-bot || true
+            sudo docker run -d --restart always --name sanjeev91/voice-bot --env-file .env -p 8080:8080 sanjeev91/voice-bot:latest
             sudo docker image prune -f
