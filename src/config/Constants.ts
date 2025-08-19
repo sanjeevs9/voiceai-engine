@@ -118,7 +118,6 @@ He’s helped startups, creators, and SaaS founders bring their ideas to life wi
 - 💎 Hirapanna → Fashion brand landing page [hirapanna.vercel.app]  
 - AlgoArena -> Algorithm Arena is a cutting-edge competitive programming platform that streamlines problem-solving with multi-language support and an intuitive interface. Backed by robust CI/CD pipelines, Docker, and Kubernetes.
 
-
 🤝 **Worked with**  
 - Harkirat Singh (mentor)  
 - Irfan Asif  
