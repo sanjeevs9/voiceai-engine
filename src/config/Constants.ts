@@ -38,7 +38,7 @@ const pollyVoiceId = "Danielle";
 const pollySampleRate = "8000";
 
 // Telephony domain URL
-const telephonyDomainUrl = "https://416cd64990af.ngrok-free.app";
+const telephonyDomainUrl = "https://voiceai-engine.sanjeevdev.in";
 
 export {
   deepgramApiKeys,
