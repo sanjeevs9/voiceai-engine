@@ -50,7 +50,7 @@ const val=await response.json();
 console.log(val);
     if(val.fatal){
         res.status(404).json({
-            message:"Number already verified or wrong number"
+            message:val.fatal
         })
         return
     }
